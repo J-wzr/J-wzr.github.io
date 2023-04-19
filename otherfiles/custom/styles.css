@@ -7,3 +7,8 @@
     color: #000;
     
 }
+.table td.email {
+    max-width: 200px; /* Change this value as needed */
+    word-wrap: break-word;
+  }
+  
