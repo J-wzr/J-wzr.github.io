@@ -62,3 +62,24 @@ table tr:hover td{
         width: 70%;
     }
   }
+/* navbar styles */
+.navbar-brand img{
+    height: 60px;
+    width: auto;
+    
+}
+.navbar-brand img+code{
+    font-size: 14px;
+    color: #ff8c00;
+
+}
+.navbar-nav li:hover{
+    background-color: #ffe4c4;
+}
+/* .navbar-toggler-icon{background-color: #ff8c00} */
+.nav-item .nav-link{
+    white-space: nowrap;
+}
+li a:active{
+    background-color: #ffe4c4 !important;
+}
