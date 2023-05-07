@@ -1,3 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: auto;
+    width: 100% !important; 
+}
 #home-logo{
     height: 76px;
     width: 150px;
@@ -5,21 +13,11 @@
 .bgColor{
     background-color: white;
     color: #000;
-    
 }
 .table td.email {
     max-width: 200px; /* Change this value as needed */
     word-wrap: break-word;
   }
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    margin: auto;
-    width: 100%;
-    
-}
 .whole-cv{
     padding: 20px 5px;
     background-color: #fff;
@@ -57,21 +55,14 @@ table tr:hover td{
 .university{
 
 }
-  @media screen and (width > 800px) {
-    body{
-        width: 70%;
-    }
-  }
 /* navbar styles */
 .navbar-brand img{
     height: 60px;
     width: auto;
-    
 }
 .navbar-brand img+code{
     font-size: 14px;
     color: #ff8c00;
-
 }
 .navbar-nav li:hover{
     background-color: #ffe4c4;
@@ -82,4 +73,51 @@ table tr:hover td{
 }
 li a:active{
     background-color: #ffe4c4 !important;
+}
+.authbtns{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.welcome-section{
+    height: 55vh;
+    width: 100%;
+    z-index: -1;
+    position: sticky;
+    background-position: bottom;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../images/josh_hat.jpg");
+}
+/* My responsive section */
+@media screen and (width > 800px) {
+    body{
+        width: 70%;
+    }
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .welcome-section{height: 40vh;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .welcome-section{height: 35vh;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .welcome-section{height: 55vh;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .welcome-section{height: 55vh;}
 }
