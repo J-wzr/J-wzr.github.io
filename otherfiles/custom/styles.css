@@ -81,9 +81,30 @@ li a:active{
     top: 0;
     right: 0;
 }
-#welcome span:first-child{
-    font-family: 'Chewy', cursive;
+.nav-item:active{
+    background-color: #ff8c00 !important;
 }
+#welcome span:nth-child(1), #welcome span:nth-child(2){
+    font-family: 'Chela One', cursive;
+    font-family: 'Chewy', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Sriracha', cursive;
+    font-weight: 500;
+   
+}
+h2#intro span:first-child, h3#intro span:first-child{
+    font-family: 'Chela One', cursive;
+    font-family: 'Chewy', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Sriracha', cursive;
+    color: #ff8c00;
+    font-weight: 400;
+}
+code{color: #ff8c00;font-weight: 400;}
+
+#welcome span:nth-child(3){color: #00c3ff}
 .welcome-section{
     color: #fff;
     padding-top: 70px;
@@ -93,9 +114,18 @@ li a:active{
     top: 0;
     background-color: #000;
 }
+.intro-image{
+    position: relative;
+    height: 170px;
+}
+.intro-div{
+    bottom: 0;
+}
 .my-image{
     width: 170px;
     height: 170px;
+    position: absolute;
+    top: 0;
 }
 .welcome-section h1{
     font-weight: 900;
@@ -110,17 +140,32 @@ li a:active{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .welcome-section{height: 50vh;}
+    .welcome-section{height: 55vh;}
+    .my-image{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+    }
+    .intro-image{
+        position: relative;height: 100px;
+    }
+    .intro-div{width: 100%;}
+
+    h1{font-size: 25px;}
+
+    h3#intro{padding: 0;margin: 0;}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .welcome-section{height: 50vh;}
+    .welcome-section{height: 55vh;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .welcome-section{height: 40vh;}
+    .welcome-section{height: 50vh;}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
