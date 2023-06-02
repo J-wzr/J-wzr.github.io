@@ -155,25 +155,24 @@ code{color: #ff8c00;font-weight: 400;}
     h1{font-size: 25px;}
 
     h3#intro{padding: 0;margin: 0;}
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .welcome-section{height: 55vh;}
+    .welcome-section{height: 60vh;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .welcome-section{height: 50vh;}
+    .welcome-section{height: 60vh;}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .welcome-section{height: 65vh;}
+    .welcome-section{height: 60vh;}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .welcome-section{height: 70vh;}
+    .welcome-section{height: 65vh;}
 }
