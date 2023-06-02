@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+a{text-decoration: none;}
+li{list-style-type: none;}
+.footer a {color: #00c3ff}
 body{
     margin: auto;
     width: 100% !important; 
@@ -12,7 +15,7 @@ body{
     width: 150px;
 }
 .bgColor{
-    background-color: white;
+    background-color: #fff;
     color: #000;
 }
 .table td.email {
@@ -73,17 +76,13 @@ marquee{
 .nav-item .nav-link{
     white-space: nowrap;
 }
-li a:active{
-    background-color: #ffe4c4 !important;
-}
+
 .authbtns{
     position: absolute;
     top: 0;
     right: 0;
 }
-.nav-item:active{
-    background-color: #ff8c00 !important;
-}
+
 #welcome span:nth-child(1), #welcome span:nth-child(2){
     font-family: 'Chela One', cursive;
     font-family: 'Chewy', cursive;
@@ -131,6 +130,16 @@ code{color: #ff8c00;font-weight: 400;}
     font-weight: 900;
     color: white;
 }
+#footer-header{
+    font-family: 'Chela One', cursive;
+    font-family: 'Chewy', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Sriracha', cursive;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
 /* My responsive section */
 @media screen and (width > 800px) {
     body{
