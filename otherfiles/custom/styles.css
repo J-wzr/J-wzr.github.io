@@ -160,7 +160,7 @@ code{color: #ff8c00;font-weight: 400;}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .welcome-section{height: 55vh;}
+    .welcome-section{height: 60vh;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
