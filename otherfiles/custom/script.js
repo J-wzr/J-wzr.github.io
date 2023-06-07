@@ -21,7 +21,7 @@ $(document).ready(function(){
 
     // footer formatings
     setInterval(function(){
-        $("#footer-header").fadeIn(3000).delay(4000).fadeOut(1000)
+        $(".footer-header").fadeIn(3000).delay(4000).fadeOut(1000)
     }, 8000)
 
     // active links
@@ -29,6 +29,4 @@ $(document).ready(function(){
         $("a").css("background-color", ""); 
         $(this).css("background-color", "black !important"); 
     });
-    
-
 });
