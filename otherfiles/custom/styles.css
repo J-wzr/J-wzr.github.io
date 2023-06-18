@@ -20,13 +20,15 @@ body{
     color: #000;
 }
 .table td.email {
-    max-width: 200px; /* Change this value as needed */
+    max-width: 200px;
     word-wrap: break-word;
   }
+
 .whole-cv{
     padding: 20px 5px;
     background-color: #fff;
     border-radius: 5px 5px 0 0;
+    margin-top: 80px;
 }
 h3{
     font-size: 1.3em;
