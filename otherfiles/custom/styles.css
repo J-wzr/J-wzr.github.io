@@ -142,6 +142,42 @@ code{color: #ff8c00;font-weight: 400;}
     font-weight: 500;
     font-size: 1.6em;
 }
+/* .footer{} */
+#side-bar{
+    height: 90vh !important; margin-top:70px; width: 260px;
+    top: 0;
+    left: 0;
+    background: url('../../images/myBg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: fixed;
+
+}
+
+#side-bar.inactive{
+    left: -100%; transition:0.5s;
+}
+
+.close-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 0;
+    cursor: pointer;
+    margin: 20px;
+    
+}
+.open-btn{
+    background-color: #00c3ff;
+    color: #fff;
+    font-size: 20px;
+}
+.open-btn i{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px 20px;
+}
 
 /* My responsive section */
 @media screen and (width > 800px) {
@@ -149,7 +185,6 @@ code{color: #ff8c00;font-weight: 400;}
         width: 70%;
     }
   }
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 350px) {
     .welcome-section{height: 65vh;}

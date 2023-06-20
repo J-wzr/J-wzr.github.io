@@ -17,16 +17,24 @@ $(document).ready(function(){
         loop: true,
         startDelay: 2000
     });
+});
 
+$(document).ready(function(){
 
     // footer formatings
     setInterval(function(){
         $(".footer-header").fadeIn(3000).delay(4000).fadeOut(1000)
-    }, 8000)
+    }, 8000);
 
-    // active links
-    $("a").click(function() {
-        $("a").css("background-color", ""); 
-        $(this).css("background-color", "black !important"); 
+    
+
+// closing the sidebar
+    $('.close-btn').click(function(){
+        $('#side-bar').css({"left":"-100%", "transition": "0.5s"});
+    });
+
+// showing the side-bar
+    $('.open-btn i').click(function(){
+        $('#side-bar').css({"left": "0","transition":"0.5s"});
     });
 });
