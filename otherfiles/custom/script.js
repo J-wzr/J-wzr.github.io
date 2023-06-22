@@ -38,3 +38,17 @@ $(document).ready(function(){
         $('#side-bar').css({"left": "0","transition":"0.5s"});
     });
 });
+
+$(document).ready(function() {
+    var stickyDiv = $('#sticky-div');
+    var stickyOffset = stickyDiv.offset().top;
+  
+    $(window).scroll(function() {
+      if ($(window).scrollTop() >= stickyOffset) {
+        stickyDiv.addClass('sticky');
+      } else {
+        stickyDiv.removeClass('sticky');
+      }
+    });
+  });
+  

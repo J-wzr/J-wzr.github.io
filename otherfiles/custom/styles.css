@@ -142,9 +142,9 @@ code{color: #ff8c00;font-weight: 400;}
     font-weight: 500;
     font-size: 1.6em;
 }
-/* .footer{} */
+.footer{z-index: 999;}
 #side-bar{
-    height: 90vh !important; margin-top:70px; width: 260px;
+    height: 100vh !important; margin-top:70px; width: 260px;
     top: 0;
     left: 0;
     background: url('../../images/myBg.png');
@@ -152,6 +152,7 @@ code{color: #ff8c00;font-weight: 400;}
     background-position: bottom;
     background-size: cover;
     position: fixed;
+    z-index: 1;
 
 }
 
@@ -178,6 +179,24 @@ code{color: #ff8c00;font-weight: 400;}
     font-size: 20px;
     margin: 5px 20px;
 }
+.main-content{
+    margin-top: 70px;
+    min-height: calc(75vh);
+}
+
+#sticky-div {
+    /* Initial styles */
+  }
+  
+  #sticky-div.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Additional styles for appearance */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
 
 /* My responsive section */
 @media screen and (width > 800px) {
