@@ -72,8 +72,9 @@ marquee{
     font-size: 14px;
     color: #ff8c00;
 }
-.navbar-nav li:hover{
+.navbar-nav li a:hover{
     background-color: #ffe4c4;
+    color: #000 !important;
 }
 /* .navbar-toggler-icon{background-color: #ff8c00} */
 .nav-item .nav-link{
@@ -115,6 +116,20 @@ code{color: #ff8c00;font-weight: 400;}
     position: sticky;
     top: 0;
     background-color: #000;
+    background-image: url(../../images/bg.jpg);
+    background-size: cover;
+    background-position: right 80%;
+    position: relative;
+    z-index: 1;
+}
+.welcome-section::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.1));
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: -1;
 }
 .intro-image{
     position: relative;
@@ -132,6 +147,7 @@ code{color: #ff8c00;font-weight: 400;}
 .welcome-section h1{
     font-weight: 900;
     color: white;
+    z-index: 5;
 }
 #footer-header{
     font-family: 'Chela One', cursive;
@@ -196,6 +212,19 @@ code{color: #ff8c00;font-weight: 400;}
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 /* My responsive section */

@@ -25,13 +25,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Chewy&family=Libre+Baskerville&family=Lobster&family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Chewy&family=Libre+Baskerville&family=Lobster&family=Sriracha&display=swap" rel="stylesheet">
+
+
+  <style>
+    .nav-item{position: relative;}
+    .nav-item .active{font-weight: 700;}
+    .nav-item .active::after{
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      bottom: 0;
+      background-color: #ff8c00;
+      content: "";
+      left: 0;
+    }
+    code{color: #ff8c00; font-weight: 700;}
+  </style>
   </head>
+
+
   <body class="border bg-light">
     <nav class="navbar py-0 navbar-expand-sm navbarstyle bg-light shadow-sm fixed-top">
       <div class="container-fluid">
-        <a href="index.html" class="navbar-brand border-end rounded-end">
+        <a href="index.html" class="navbar-brand border-end border-warning rounded-end">
           <img src="images/josh_wzr_logo2.png" alt="Mwesigwa Joshua's Portfolio">
           <code class="pe-1">portfolio</code>
         </a>
@@ -41,8 +59,8 @@
       </div>
       <div class="collapse navbar-collapse px-4" id="collapsibleNavbar">
         <ul class="navbar-nav p-0 m-0">
-          <li class="nav-item p-0 m-0">
-            <a href="index.html" class="nav-link mx-2 py-md-4 px-2">Home</a>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active mx-2 py-md-4 px-2">Home</a>
           </li>
           <li class="nav-item p-0 m-0">
             <a href="otherfiles/cv.html" class="nav-link mx-2 py-md-4 px-2">Curriculum Vitae</a>
@@ -51,7 +69,7 @@
             <a href="otherfiles/resume.html" class="nav-link mx-2 py-md-4 px-2">Resume</a>
           </li>
           <li class="nav-item p-0 m-0">
-            <a href="otherfiles/blog.html" class="nav-link mx-2 py-md-4 px-2">Blog</a>
+            <a href="otherfiles/blog.html" class="nav-link py-md-4 px-2 mx-2">Blog</a>
           </li>
         </ul>
       </div>
@@ -61,7 +79,7 @@
         <img  class="m-0 p-0 my-image border border-4 border-info rounded-circle" 
         src="images/josh_hat.jpg" alt="Joshua Mwesigwa's Image">
       </div>
-      <div class="container intro-div w-75">
+      <div class="container intro-div w-75" style="z-index: 8;">
         <h1 class="p-2" id="welcome"><span>You're Welcome,</span> <span>to this</span>
           <span>Personal Portfolio Site.</span></h1>
         <h3 class="p-2" id="intro"> <span>My Name is;</span> <span>Mwesigwa Joshua,</span></h3>
